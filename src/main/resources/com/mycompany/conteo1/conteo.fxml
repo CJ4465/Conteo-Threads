@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.conteo1.ConteoController">
+    <children>
+      <Label layoutX="106.0" layoutY="37.0" text="Contar número de clics">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtClicks" alignment="CENTER" editable="false" layoutX="84.0" layoutY="75.0" prefHeight="25.0" prefWidth="233.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button fx:id="btnContar" layoutX="154.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleContar" text="¡Contar!">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      
+      <Label layoutX="118.0" layoutY="200.0" text="Esperar 10 segundos">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ProgressBar fx:id="progressBar" layoutX="84.0" layoutY="235.0" prefHeight="27.0" prefWidth="234.0" progress="0.0" />
+      <Button fx:id="btnEsperar" layoutX="154.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleEsperar" text="¡Esperar!">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
